@@ -10,8 +10,9 @@ public class Question04_1 {
 
 	public static void main(String[] args) throws IOException {
 
-		// TODO:ここに実装
+		// (1)配列の準備
 		int[] ageGroup = new int[5];
+
 		ageGroup[0] = 12;
 		ageGroup[1] = 18;
 		ageGroup[2] = 24;

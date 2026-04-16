@@ -12,28 +12,21 @@ public class Question05_4 {
 
 	public static void main(String[] args) throws IOException {
 
-		// TODO:ここに実装
-		System.out.println("数学の試験結果の点数を入力してください");
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		String score = reader.readLine();
-		int math = Integer.parseInt(score);
+		System.out.println("数学の試験結果の点数を入力してください。");
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int math = Integer.parseInt(br.readLine()); // 数学の点数
 
 		System.out.println("国語の試験結果の点数を入力してください。");
-		String score2 = reader.readLine();
-		int japanese = Integer.parseInt(score2);
+		int japanese = Integer.parseInt(br.readLine()); // 国語の点数
 
+		// 条件分岐
 		if (math >= 60 && japanese >= 60) {
-			System.out.println("数学と国語ともに合格です。");
-
+			System.out.println("数学、国語ともに合格です。");
 		} else if (math >= 60 || japanese >= 60) {
 			System.out.println("数学、国語どちらかが合格です。");
-
-		} else {
+		}else {
 			System.out.println("どちらの教科も不合格です。");
-
-		}
-		{
-
 		}
 
 	}

@@ -8,7 +8,6 @@ public class Question01_1 {
 
 	public static void main(String[] args) {
 
-		// TODO:ここに実装
 		int price = 120;
 		String item = "ノート";
 

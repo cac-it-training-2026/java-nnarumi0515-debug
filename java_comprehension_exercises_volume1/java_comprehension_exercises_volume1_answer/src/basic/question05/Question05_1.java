@@ -12,19 +12,16 @@ public class Question05_1 {
 
 	public static void main(String[] args) throws IOException {
 
-		// TODO:ここに実装
 		System.out.println("年齢を入力してください。");
 
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		String temage = reader.readLine();
-		int age = Integer.parseInt(temage);
-
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String tempAge = br.readLine(); // 変数に代入
+		int age = Integer.parseInt(tempAge);
+		
 		if (age < 20) {
 			System.out.println("20歳未満なので、お酒の提供ができません。");
-
 		} else {
 			System.out.println("20歳以上なので、お酒を提供することが可能です。");
-
 		}
 
 	}

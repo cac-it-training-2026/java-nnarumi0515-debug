@@ -12,14 +12,13 @@ public class Question02_1 {
 
 	public static void main(String[] args) throws IOException {
 
-		// TODO:ここに実装
-		System.out.println("名前を入力してください。");
+		System.out.println("名前を入力してください");
 
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		String name = reader.readLine();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String name = br.readLine();
 
 		System.out.println("好きなスポーツを入力してください。");
-		String sport = reader.readLine();
+		String sport = br.readLine();
 
 		System.out.println("私の名前は" + name + "です。");
 		System.out.println("好きなスポーツは" + sport + "です。");
