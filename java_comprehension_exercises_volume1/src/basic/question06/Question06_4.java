@@ -24,6 +24,8 @@ public class Question06_4 {
 			sellFlag = Integer.parseInt(answer);
 
 		} while (sellFlag == 0);
+		System.out.println("売却する本の冊数は" + amountBooks + "冊です。");
+		System.out.println("売却した本の合計金額は" + amountBooks * bookPrice + "円です。");
 
 	}
 
